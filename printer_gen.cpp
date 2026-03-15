@@ -8,10 +8,13 @@ signed main() {
     cin.tie(0);
     cout.tie(0);
 
-#ifndef LOCAL
-    // freopen("problem.in", "r", stdin);
-    // freopen("problem.out", "w", stdout);
-#endif
+    mt19937 rng(time(nullptr));
+
+    int n = 5, k = rng() % 5 + 1;
+    cout << n << " " << k << "\n";
+    for (int i = 1; i <= n; i++) {
+        cout << rng() % 10 + 1 << " ";
+    }
 
     return 0;
 }

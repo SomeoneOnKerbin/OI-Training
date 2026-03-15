@@ -13,5 +13,9 @@ signed main() {
     // freopen("problem.out", "w", stdout);
 #endif
 
+    double d;
+    cin >> d;
+    cout << fixed << setprecision(24) << M_PI * powf64(d / 2, 2);
+
     return 0;
 }
